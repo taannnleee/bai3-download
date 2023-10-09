@@ -1,4 +1,4 @@
-package murach.business;
+package letan.business;
 
 import java.io.Serializable;
 

@@ -1,6 +1,6 @@
-package murach.data;
+package letan.data;
 
-import murach.business.Product;
+import letan.business.Product;
 
 import java.io.BufferedReader;
 import java.io.File;

@@ -5,7 +5,7 @@
                          http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
     <servlet>
         <servlet-name>DownloadServlet</servlet-name>
-        <servlet-class>murach.download.DownloadServlet</servlet-class>
+        <servlet-class>letan.download.DownloadServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>

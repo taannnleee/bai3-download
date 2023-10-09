@@ -1,6 +1,6 @@
-package murach.data;
+package letan.data;
 
-import murach.business.User;
+import letan.business.User;
 
 import java.io.*;
 import java.util.ArrayList;
