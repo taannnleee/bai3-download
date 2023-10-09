@@ -26,11 +26,11 @@
     </tr>
     <tr>
         <td>You Are a Star</td>
-        <td><a href="music/8601/YoureaStar.mp3">MP3</a></td>
+        <td><a href="music/${productCode}/YoureaStar.mp3">MP3</a></td>
     </tr>
     <tr>
         <td>Don't Make No Difference</td>
-        <td><a href="music/8601/DontMakeNoDifference.mp3">MP3</a></td>
+        <td><a href="music/${productCode}/DontMakeNoDifference.mp3">MP3</a></td>
     </tr>
 </table>
 

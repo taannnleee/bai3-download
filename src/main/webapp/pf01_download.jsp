@@ -26,11 +26,11 @@
     </tr>
     <tr>
         <td>64 Corvair</td>
-        <td><a href="music/pf01/TheCorvairSong.mp3">MP3</a></td>
+        <td><a href="music/${productCode}/TheCorvairSong.mp3">MP3</a></td>
     </tr>
     <tr>
         <td>Whiskey Before Breakfast</td>
-        <td><a href="music/pf01/Whiskeybeforebreakfast.mp3">MP3</a></td>
+        <td><a href="music/${productCode}/Whiskeybeforebreakfast.mp3">MP3</a></td>
     </tr>
 </table>
 

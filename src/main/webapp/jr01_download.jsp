@@ -26,10 +26,10 @@
     </tr>
     <tr>
         <td>Filter</td>
-        <td><a href="music/jr01/Filter.mp3">MP3</a></td>
+        <td><a href="music/${productCode}/Filter.mp3">MP3</a></td>
     </tr>
     <tr>
         <td>So Long Lazy Ray</td>
-        <td><a href="music/jr01/SoLongLazyRay.mp3">MP3</a></td>
+        <td><a href="music/${productCode}/SoLongLazyRay.mp3">MP3</a></td>
     </tr>
 </table>

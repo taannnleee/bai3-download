@@ -26,11 +26,11 @@
     </tr>
     <tr>
         <td>Neon Lights</td>
-        <td><a href="music/pf02/DemiLovatoNeonLights.mp3">MP3</a></td>
+        <td><a href="music/${productCode}/DemiLovatoNeonLights.mp3">MP3</a></td>
     </tr>
     <tr>
         <td>Tank Hill</td>
-        <td><a href="music/pf02/HankTrill.mp3">MP3</a></td>
+        <td><a href="music/${productCode}/HankTrill.mp3">MP3</a></td>
     </tr>
 </table>
 
