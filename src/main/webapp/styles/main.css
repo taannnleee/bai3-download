@@ -22,7 +22,7 @@ label {
     margin-bottom: 0.5em;
     font-weight: bold;
 }
-input[type="text"], input[type="email"] {  /* An attribute selector */
+input[type="text"], input[type="email"] {
     width: 15em;
     margin-left: 0.5em;
     margin-bottom: 0.5em;
@@ -35,7 +35,7 @@ br {
     clear: both;
 }
 
-/* The styles for the tables */
+
 table {
     border: 1px solid black;
     border-collapse: collapse;
@@ -46,7 +46,7 @@ th, td {
     padding: .5em;
 }
 
-/* The styles for the classes */
+
 .pad_top {
     padding-top: 0.25em;
 }
@@ -62,21 +62,20 @@ th, td {
 .returnproject button {
     position: relative;
     top: 10px;
-    background-color: #52ccf5; /* Màu xanh da trời */
-    color: #fff; /* Màu chữ trắng */
-    padding: 10px 20px; /* Kích thước nút */
-    border: none; /* Loại bỏ đường viền */
-    cursor: pointer; /* Biến con trỏ thành bàn tay khi di chuột qua nút */
-    display: flex; /* Sử dụng flexbox để căn giữa nội dung */
-    align-items: center; /* Căn giữa theo chiều dọc */
+    background-color: #52ccf5;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
 }
 
-/* Định dạng mũ tên (mũ tên hướng qua trái) */
 .returnproject .arrow {
-    margin-right: 5px; /* Khoảng cách giữa mũ tên và chữ "Return Project" */
+    margin-right: 5px;
 }
 
-/* Định dạng khi di chuột qua nút */
+
 .returnproject button:hover {
-    background-color: #0073e6; /* Màu xanh da trời nhạt hơn khi di chuột qua */
+    background-color: #0073e6;
 }
