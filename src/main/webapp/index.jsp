@@ -12,20 +12,20 @@
 <h1>List of albums</h1>
 
 <p>
-  <a href="download?action=checkUser&amp;productCode=8601">
-    86 (the band) - True Life Songs and Pictures
+  <a href="download?action=checkUser&amp;productCode=camly">
+    Cam Ly
   </a><br>
 
-  <a href="download?action=checkUser&amp;productCode=pf01">
-    Paddlefoot - The First CD
+  <a href="download?action=checkUser&amp;productCode=dantruong">
+    Dan Truong
   </a><br>
 
-  <a href="download?action=checkUser&amp;productCode=pf02">
-    Paddlefoot - The Second CD
+  <a href="download?action=checkUser&amp;productCode=bray">
+    Bray
   </a><br>
 
-  <a href="download?action=checkUser&amp;productCode=jr01">
-    Joe Rut - Genuine Wood Grained Finish
+  <a href="download?action=checkUser&amp;productCode=denvau">
+    Den Vau
   </a>
 </p>
 
