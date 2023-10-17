@@ -10,7 +10,10 @@
 <body>
 
 <h1>List of albums</h1>
-
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:if test="${cookie.firstNameCookie.value != null}">
+  <p><strong>Welcome back, <c:out value='${cookie.firstNameCookie.value}'/></strong></p>
+</c:if>
 <p>
   <a href="download?action=checkUser&amp;productCode=camly">
     Cam Ly

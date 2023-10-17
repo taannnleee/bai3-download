@@ -3,8 +3,8 @@ package letan.data;
 import letan.business.User;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.StringTokenizer;
+import java.util.*;
+
 
 public class UserIO {
 

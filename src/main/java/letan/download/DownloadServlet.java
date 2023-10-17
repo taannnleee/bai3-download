@@ -1,20 +1,23 @@
 package letan.download;
 
+import java.io.*;
+import javax.servlet.*;
+import javax.servlet.http.*;
+
 import letan.business.User;
 import letan.data.UserIO;
 import letan.util.CookieUtil;
 
-import javax.servlet.ServletContext;
-import javax.servlet.ServletException;
-import javax.servlet.http.*;
-import java.io.IOException;
-
 public class DownloadServlet extends HttpServlet {
+
     @Override
     public void doGet(HttpServletRequest request,
                       HttpServletResponse response)
             throws IOException, ServletException {
 
+        response.setContentType("text/html");
+        response.setCharacterEncoding("UTF-8");
+        request.setCharacterEncoding("UTF-8");
         // get current action
         String action = request.getParameter("action");
         if (action == null) {
@@ -43,6 +46,10 @@ public class DownloadServlet extends HttpServlet {
     public void doPost(HttpServletRequest request,
                        HttpServletResponse response)
             throws IOException, ServletException {
+
+        response.setContentType("text/html");
+        request.setCharacterEncoding("UTF-8");
+        response.setCharacterEncoding("UTF-8");
 
         String action = request.getParameter("action");
 
@@ -80,8 +87,7 @@ public class DownloadServlet extends HttpServlet {
             // if cookie exists, create User object and go to Downloads page
             else {
                 ServletContext sc = getServletContext();
-                String path = sc.getRealPath("/WEB-INF/EmailList.txt");
-                user = UserIO.getUser(emailAddress, path);
+                String path = sc.getRealPath("/WEB-INF/EmailList.txt");user = UserIO.getUser(emailAddress, path);
                 session.setAttribute("user", user);
                 url = "/" + productCode + "_download.jsp";
             }
@@ -116,11 +122,17 @@ public class DownloadServlet extends HttpServlet {
         HttpSession session = request.getSession();
         session.setAttribute("user", user);
 
-        // add a cookie that stores the user's email to browser
-        Cookie c = new Cookie("userEmail", email);
-        c.setMaxAge(60 * 60 * 24 * 365 * 3); // set age to 3 years
-        c.setPath("/");                      // allow entire app to access it
-        response.addCookie(c);
+        // add a cookie that stores the user's email as a cookie
+        Cookie c1 = new Cookie("emailCookie", email);
+        c1.setMaxAge(60 * 60 * 24 * 365 * 2); // set age to 2 years
+        c1.setPath("/");                      // allow entire app to access it
+        response.addCookie(c1);
+
+        // add a cookie that stores the user's as a cookie
+        Cookie c2 = new Cookie("firstNameCookie", firstName);
+        c2.setMaxAge(60 * 60 * 24 * 365 * 2); // set age to 2 years
+        c2.setPath("/");                      // allow entire app to access it
+        response.addCookie(c2);
 
         // create and return a URL for the appropriate Download page
         String productCode = (String) session.getAttribute("productCode");
