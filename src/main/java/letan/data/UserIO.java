@@ -11,8 +11,9 @@ public class UserIO {
     public static boolean add(User user, String filepath) {
         try {
             File file = new File(filepath);
-            PrintWriter out = new PrintWriter(
-                    new FileWriter(file, true));
+            PrintWriter out = new PrintWriter(new OutputStreamWriter(new FileOutputStream(file,true),"UTF-8"));
+//            PrintWriter out = new PrintWriter(
+//                    new FileWriter(file, true));
             out.println(user.getEmail() + "|"
                     + user.getFirstName() + "|"
                     + user.getLastName());
@@ -28,8 +29,8 @@ public class UserIO {
     public static User getUser(String email, String filepath) {
         try {
             File file = new File(filepath);
-            BufferedReader in = new BufferedReader(
-                    new FileReader(file));
+            BufferedReader in = new BufferedReader(new InputStreamReader(new FileInputStream(file),"UTF-8"));
+//                    new FileReader(file));
             User user = new User();
             String line = in.readLine();
             while (line != null) {
